@@ -1,78 +1,78 @@
 <script lang="ts">
-	import type { Colors } from '$lib/types/colors';
-	import { shareProperty } from '$lib/utils';
+	import type { Colors } from '$lib/types/colors'
+	import { shareProperty } from '$lib/utils'
 
-	import clsx from 'clsx';
-
-	/**
-	 * TODO
-	 */
-	export let block: boolean = false;
+	import clsx from 'clsx'
 
 	/**
 	 * TODO
 	 */
-	export let color: Colors = 'primary';
+	export let block: boolean = false
+
+	/**
+	 * TODO
+	 */
+	export let color: Colors = 'primary'
 
 	/**
 	 * TODO
 	 */
 
-	export let disabled: boolean = false;
+	export let disabled: boolean = false
 
 	/**
 	 * TODO
 	 */
-	export let link: boolean = false;
+	export let link: boolean = false
 
 	/**
 	 * TODO
 	 */
-	export let loading: boolean = false;
+	export let loading: boolean = false
 
 	/**
 	 * TODO
 	 */
-	export let outline: boolean = false;
+	export let outline: boolean = false
 
 	/**
 	 * TODO
 	 */
-	export let size: 'sm' | 'md' | 'lg' = 'md';
+	export let size: 'sm' | 'md' | 'lg' = 'md'
 
 	/**
 	 * TODO
 	 */
-	export let skeleton: boolean = false;
+	export let skeleton: boolean = false
 
 	/**
 	 * TODO
 	 */
-	export let visible: boolean = true;
+	export let visible: boolean = true
 
 	/**
 	 * TODO
 	 */
-	export let to: string = '';
+	export let to: string = ''
 
 	$: classes = clsx('u-btn', {
-		btn: !link,
+		'btn': !link,
 		[`btn-${color}`]: !link && !outline && color,
 		[`btn-outline-${color}`]: !link && outline && color,
 		[`btn-${size}`]: !link && size,
 		'btn-loading': !link && loading,
 		'btn-block': !link && block,
-		disabled: !link && disabled
-	});
+		'disabled': !link && disabled,
+	})
 
-	$: skeleton_ = shareProperty('skeleton', skeleton);
+	$: skeleton_ = shareProperty('skeleton', skeleton)
 </script>
 
 {#if visible}
 	{#if to}
-		<!-- <Link class={classes} {disabled} role="button" {to} type="button" on:click {...$$restProps}>
+		<a class={classes} {disabled} role="button" href={to} type="button" on:click {...$$restProps}>
 			<slot />
-		</Link> -->
+		</a>
 	{:else}
 		<button class={classes} {disabled} on:click {...$$restProps}>
 			<slot />
