@@ -1,3 +1,3 @@
-<div class="u-buttons btn-list">
+<div class="btn-list">
 	<slot />
 </div>
