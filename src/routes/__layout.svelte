@@ -1,19 +1,20 @@
 <script lang="ts">
-	import { Footer, Header } from '@components'
+	import { Footer, Header, Navbar } from '@components'
 
 	// import '../app.css';
 </script>
 
 <Header />
+<Navbar />
 <main>
-	<slot />
+	<div class="page-wrapper">
+		<div class="container-xl">
+			<slot />
+		</div>
+	</div>
 </main>
 
 <Footer />
-
-<footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-</footer>
 
 <style lang="scss" global>
 	@import '@tabler/core/src/scss/tabler';
