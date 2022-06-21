@@ -1,3 +1,3 @@
-<div class="u-card-body card-body">
+<div class="card-body">
 	<slot />
 </div>

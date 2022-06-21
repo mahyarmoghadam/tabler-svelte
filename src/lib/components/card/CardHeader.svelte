@@ -1,10 +1,6 @@
 <script lang="ts">
 	import CardActions from './CardActions.svelte'
 	import CardTitle from './CardTitle.svelte'
-
-	/**
-	 * TODO
-	 */
 	export let title: string = ''
 </script>
 
