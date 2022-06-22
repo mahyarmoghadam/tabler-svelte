@@ -27,7 +27,7 @@
 		'btn-block': !link && block,
 		'disabled': !link && disabled,
 		'w-100': block,
-		className,
+		[className]: className,
 	})
 </script>
 

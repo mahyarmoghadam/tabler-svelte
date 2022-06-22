@@ -2,8 +2,7 @@
 </script>
 
 <script lang="ts">
-	import { Button } from '$lib/components'
-	import Card from '$lib/components/card/Card.svelte'
+	import { Button, Row, Card, Col } from '$lib/components'
 </script>
 
 <svelte:head>
@@ -23,6 +22,7 @@
 				<div class="col-6 col-sm-4 col-md-2 col-xl py-3">
 					<Button color="primary" block className="test">Primary</Button>
 				</div>
+
 				<div class="col-6 col-sm-4 col-md-2 col-xl py-3">
 					<Button color="secondary" block>Secondary</Button>
 				</div>
@@ -49,6 +49,34 @@
 					<Button color="light" block>Light</Button>
 				</div>
 			</div>
+
+			<Row alignItems="center" g="2">
+				<Col col="12" xl="2" samiBold>Normal</Col>
+				<Col col="6" sm="4" md="2" py="3" xl>
+					<Button color="primary" block>Primary</Button>
+				</Col>
+				<Col col="6" sm="4" md="2" py="3" xl>
+					<Button color="secondary" block>Secondary</Button>
+				</Col>
+				<Col col="6" sm="4" md="2" py="3" xl>
+					<Button color="success" block>Success</Button>
+				</Col>
+				<Col col="6" sm="4" md="2" py="3" xl>
+					<Button color="warning" block>Warning</Button>
+				</Col>
+				<Col col="6" sm="4" md="2" py="3" xl>
+					<Button color="danger" block>danger</Button>
+				</Col>
+				<Col col="6" sm="4" md="2" py="3" xl>
+					<Button color="info" block>info</Button>
+				</Col>
+				<Col col="6" sm="4" md="2" py="3" xl>
+					<Button color="dark" block>Dark</Button>
+				</Col>
+				<Col col="6" sm="4" md="2" py="3" xl color="dark">
+					<Button color="light" block>Light</Button>
+				</Col>
+			</Row>
 		</div>
 	</Card>
 </section>
