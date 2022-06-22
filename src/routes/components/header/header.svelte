@@ -110,7 +110,7 @@
 				</a>
 				<div class="nav-item dropdown d-none d-md-flex me-3">
 					<a
-						href="#"
+						href={'#'}
 						class="nav-link px-0"
 						data-bs-toggle="dropdown"
 						tabindex="-1"
@@ -144,13 +144,13 @@
 											<span class="status-dot status-dot-animated bg-red d-block" />
 										</div>
 										<div class="col text-truncate">
-											<a href="#" class="text-body d-block">Example 1</a>
+											<a href={'#'} class="text-body d-block">Example 1</a>
 											<div class="d-block text-muted text-truncate mt-n1">
 												Change deprecated html tags to text decoration classes (#29604)
 											</div>
 										</div>
 										<div class="col-auto">
-											<a href="#" class="list-group-item-actions">
+											<a href={'#'} class="list-group-item-actions">
 												<!-- Download SVG icon from http://tabler-icons.io/i/star -->
 												<svg
 													xmlns="http://www.w3.org/2000/svg"
@@ -173,13 +173,13 @@
 									<div class="row align-items-center">
 										<div class="col-auto"><span class="status-dot d-block" /></div>
 										<div class="col text-truncate">
-											<a href="#" class="text-body d-block">Example 2</a>
+											<a href={'#'} class="text-body d-block">Example 2</a>
 											<div class="d-block text-muted text-truncate mt-n1">
 												justify-content:between ⇒ justify-content:space-between (#29734)
 											</div>
 										</div>
 										<div class="col-auto">
-											<a href="#" class="list-group-item-actions show">
+											<a href={'#'} class="list-group-item-actions show">
 												<!-- Download SVG icon from http://tabler-icons.io/i/star -->
 												<svg
 													xmlns="http://www.w3.org/2000/svg"
@@ -202,13 +202,13 @@
 									<div class="row align-items-center">
 										<div class="col-auto"><span class="status-dot d-block" /></div>
 										<div class="col text-truncate">
-											<a href="#" class="text-body d-block">Example 3</a>
+											<a href={'#'} class="text-body d-block">Example 3</a>
 											<div class="d-block text-muted text-truncate mt-n1">
 												Update change-version.js (#29736)
 											</div>
 										</div>
 										<div class="col-auto">
-											<a href="#" class="list-group-item-actions">
+											<a href={'#'} class="list-group-item-actions">
 												<!-- Download SVG icon from http://tabler-icons.io/i/star -->
 												<svg
 													xmlns="http://www.w3.org/2000/svg"
@@ -233,13 +233,13 @@
 											<span class="status-dot status-dot-animated bg-green d-block" />
 										</div>
 										<div class="col text-truncate">
-											<a href="#" class="text-body d-block">Example 4</a>
+											<a href={'#'} class="text-body d-block">Example 4</a>
 											<div class="d-block text-muted text-truncate mt-n1">
 												Regenerate package-lock.json (#29730)
 											</div>
 										</div>
 										<div class="col-auto">
-											<a href="#" class="list-group-item-actions">
+											<a href={'#'} class="list-group-item-actions">
 												<!-- Download SVG icon from http://tabler-icons.io/i/star -->
 												<svg
 													xmlns="http://www.w3.org/2000/svg"
@@ -265,7 +265,7 @@
 			</div>
 			<div class="nav-item dropdown">
 				<a
-					href="#"
+					href={'#'}
 					class="nav-link d-flex lh-1 text-reset p-0"
 					data-bs-toggle="dropdown"
 					aria-label="Open user menu">
@@ -276,12 +276,12 @@
 					</div>
 				</a>
 				<div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-					<a href="#" class="dropdown-item">Set status</a>
-					<a href="#" class="dropdown-item">Profile &amp; account</a>
-					<a href="#" class="dropdown-item">Feedback</a>
+					<a href={'#'} class="dropdown-item">Set status</a>
+					<a href={'#'} class="dropdown-item">Profile &amp; account</a>
+					<a href={'#'} class="dropdown-item">Feedback</a>
 					<div class="dropdown-divider" />
-					<a href="#" class="dropdown-item">Settings</a>
-					<a href="#" class="dropdown-item">Logout</a>
+					<a href={'#'} class="dropdown-item">Settings</a>
+					<a href={'#'} class="dropdown-item">Logout</a>
 				</div>
 			</div>
 		</div>
