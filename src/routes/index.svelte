@@ -19,6 +19,7 @@
 		<div slot="body">
 			<div class="row g-2 align-items-center">
 				<div class="col-12 col-xl-2 font-weight-semibold">Normal</div>
+
 				<div class="col-6 col-sm-4 col-md-2 col-xl py-3">
 					<Button color="primary" block className="test">Primary</Button>
 				</div>
