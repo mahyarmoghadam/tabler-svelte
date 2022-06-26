@@ -27,13 +27,13 @@
 	export let samiBold: boolean = false
 
 	$: classes = clsx(col ? `col-${col}` : 'col', {
-		[`col-xl-${xl}`]: !!xl && (typeof xl == 'string'),
-		[`col-md-${md}`]: !!md && (typeof md == 'string'),
-		[`col-sm-${sm}`]: !!sm && (typeof sm == 'string'),
+		[`col-xl-${xl}`]: !!xl && typeof xl == 'string',
+		[`col-md-${md}`]: !!md && typeof md == 'string',
+		[`col-sm-${sm}`]: !!sm && typeof sm == 'string',
 
-		'col-xl': !!xl && (typeof xl == 'boolean'),
-		'col-md': !!md && (typeof md == 'boolean'),
-		'col-sm': !!sm && (typeof sm == 'boolean'),
+		'col-xl': !!xl && typeof xl == 'boolean',
+		'col-md': !!md && typeof md == 'boolean',
+		'col-sm': !!sm && typeof sm == 'boolean',
 
 		[`bg-${color}`]: !!color,
 		[`py-${py}`]: !!py,

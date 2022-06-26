@@ -10,7 +10,8 @@
 	export let square: boolean = false
 	export let pill: boolean = false
 	export let ghost: boolean = false
-	export let size: 'sm' | 'md' | 'lg' = 'md'
+	export let active: boolean = false
+	export let size: 'sm' | 'md' | 'lg' | undefined = undefined
 	export let visible: boolean = true
 	export let to: string = ''
 	export let className: string = ''
@@ -24,9 +25,10 @@
 		'btn-square': !link && square,
 		'btn-pill': !link && pill,
 		'btn-loading': !link && loading,
-		'btn-block': !link && block,
+		// 'btn-block': !link && block,
 		'disabled': !link && disabled,
 		'w-100': block,
+		'active': active,
 		[className]: className,
 	})
 </script>

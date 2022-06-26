@@ -35,12 +35,15 @@
 		| 'stretch'
 		| undefined = undefined
 
-	export let g: size
+	export let g: size | undefined = undefined
+
+	export let className: string = ''
 
 	$: classes = clsx('row', {
 		[`g-${g}`]: !!g,
 		[`justify-content-${justifyContent}`]: !!justifyContent,
 		[`align-items-${alignItems}`]: !!alignItems,
+		[className]: className,
 	})
 </script>
 
