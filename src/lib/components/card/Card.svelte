@@ -1,4 +1,6 @@
 <script lang="ts">
+	import clsx from 'clsx'
+
 	import CardBody from './CardBody.svelte'
 	import CardFooter from './CardFooter.svelte'
 	import CardHeader from './CardHeader.svelte'
@@ -6,11 +8,16 @@
 	export let title: string = ''
 	export let footer: string = ''
 	export let visible: boolean = true
-	export let headerLight:boolean =false;
+	export let headerLight: boolean = false
+	export let borderless: boolean = false
+
+	$: classes = clsx('card', {
+		'card-borderless': borderless,
+	})
 </script>
 
 {#if visible}
-	<div class="card">
+	<div class={classes}>
 		<slot name="header">
 			{#if title || $$slots['header:actions']}
 				<CardHeader {title} {headerLight}>
