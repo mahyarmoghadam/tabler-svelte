@@ -6,13 +6,14 @@
 	export let title: string = ''
 	export let footer: string = ''
 	export let visible: boolean = true
+	export let headerLight:boolean =false;
 </script>
 
 {#if visible}
 	<div class="card">
 		<slot name="header">
 			{#if title || $$slots['header:actions']}
-				<CardHeader {title}>
+				<CardHeader {title} {headerLight}>
 					<slot slot="actions" name="header:actions" />
 				</CardHeader>
 			{/if}
