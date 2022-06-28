@@ -8,7 +8,7 @@
 	export let loading: boolean = false
 	export let outline: boolean = false
 	export let square: boolean = false
-	export let pill: boolean = false
+	export let pill : boolean = false
 	export let ghost: boolean = false
 	export let active: boolean = false
 	export let size: 'sm' | 'md' | 'lg' | undefined = undefined
