@@ -17,6 +17,7 @@
 	export let linkPop: boolean = false
 	export let rotateRight: boolean = false
 	export let rotateLeft: boolean = false
+	export let cardActive: boolean = false
 
 	let divCard: HTMLDivElement
 
@@ -36,6 +37,7 @@
 		'card-link-pop': linkPop,
 		'card-rotate-right': rotateRight,
 		'card-rotate-left': rotateLeft,
+		'card-active': cardActive,
 	})
 </script>
 
