@@ -15,6 +15,7 @@
 	export let toHref: string = ''
 	export let linkRotate: boolean = false
 	export let linkPop: boolean = false
+	export let rotateRight: boolean = false
 
 	let divCard: HTMLDivElement
 
@@ -32,6 +33,7 @@
 		'card-borderless': borderless,
 		'card-link-rotate': linkRotate,
 		'card-link-pop': linkPop,
+		'card-rotate-right': rotateRight,
 	})
 </script>
 
