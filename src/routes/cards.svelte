@@ -12,6 +12,7 @@
 	let linkRotate = true
 	let linkPop = true
 	let rotateRight = true
+	let rotateLeft = true
 </script>
 
 <Row>
@@ -59,6 +60,11 @@
 	<Col col="3">
 		<Card {rotateRight}>
 			<CardBody>Card rotate right</CardBody>
+		</Card>
+	</Col>
+	<Col col="3">
+		<Card {rotateLeft}>
+			<CardBody>Card rotate left</CardBody>
 		</Card>
 	</Col>
 </Row>
