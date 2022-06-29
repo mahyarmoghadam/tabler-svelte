@@ -18,6 +18,7 @@
 	export let rotateRight: boolean = false
 	export let rotateLeft: boolean = false
 	export let cardActive: boolean = false
+	export let cardInactive: boolean = false
 
 	let divCard: HTMLDivElement
 
@@ -38,6 +39,7 @@
 		'card-rotate-right': rotateRight,
 		'card-rotate-left': rotateLeft,
 		'card-active': cardActive,
+		'card-inactive': cardInactive,
 	})
 </script>
 
