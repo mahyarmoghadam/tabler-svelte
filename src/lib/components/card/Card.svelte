@@ -10,7 +10,7 @@
 	export let visible: boolean = true
 	export let headerLight: boolean = false
 	export let borderless: boolean = false
-
+	export let subtitle:string=''
 	$: classes = clsx('card', {
 		'card-borderless': borderless,
 	})
@@ -20,7 +20,7 @@
 	<div class={classes}>
 		<slot name="header">
 			{#if title || $$slots['header:actions']}
-				<CardHeader {title} {headerLight}>
+				<CardHeader {title} {headerLight} {subtitle}>
 					<slot slot="actions" name="header:actions" />
 				</CardHeader>
 			{/if}
