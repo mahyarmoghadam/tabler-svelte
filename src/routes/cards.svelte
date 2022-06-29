@@ -11,6 +11,7 @@
 	let toHref = '#'
 	let linkRotate = true
 	let linkPop = true
+	let rotateRight = true
 </script>
 
 <Row>
@@ -51,6 +52,13 @@
 	<Col col="3">
 		<Card {toHref} {linkPop}>
 			<CardBody>Pop hover effect</CardBody>
+		</Card>
+	</Col>
+</Row>
+<Row>
+	<Col col="3">
+		<Card {rotateRight}>
+			<CardBody>Card rotate right</CardBody>
 		</Card>
 	</Col>
 </Row>
