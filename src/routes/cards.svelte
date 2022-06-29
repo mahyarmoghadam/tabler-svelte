@@ -14,6 +14,7 @@
 	let rotateRight = true
 	let rotateLeft = true
 	let cardActive = true
+	let cardInactive = true
 </script>
 
 <Row>
@@ -72,6 +73,13 @@
 		<Card {cardActive}>
 			<CardBody>
 				<p>This is a card with active state.</p>
+			</CardBody>
+		</Card>
+	</Col>
+	<Col col="3">
+		<Card {cardInactive}>
+			<CardBody>
+				<p>This is some text inactive state.</p>
 			</CardBody>
 		</Card>
 	</Col>
