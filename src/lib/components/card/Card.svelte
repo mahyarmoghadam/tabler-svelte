@@ -13,6 +13,7 @@
 	export let borderless: boolean = false
 	export let subtitle: string = ''
 	export let toHref: string = ''
+	export let linkRotate: boolean = false
 
 	let divCard: HTMLDivElement
 
@@ -28,6 +29,7 @@
 
 	$: classes = clsx('card', {
 		'card-borderless': borderless,
+		'card-link-rotate': linkRotate,
 	})
 </script>
 
