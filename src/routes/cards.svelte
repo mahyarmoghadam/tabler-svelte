@@ -13,6 +13,7 @@
 	let linkPop = true
 	let rotateRight = true
 	let rotateLeft = true
+	let cardActive = true
 </script>
 
 <Row>
@@ -65,6 +66,13 @@
 	<Col col="3">
 		<Card {rotateLeft}>
 			<CardBody>Card rotate left</CardBody>
+		</Card>
+	</Col>
+	<Col col="3">
+		<Card {cardActive}>
+			<CardBody>
+				<p>This is a card with active state.</p>
+			</CardBody>
 		</Card>
 	</Col>
 </Row>
