@@ -1,5 +1,6 @@
 <script lang="ts">
 	import clsx from 'clsx'
+	import { onMount } from 'svelte/internal'
 
 	import CardBody from './CardBody.svelte'
 	import CardFooter from './CardFooter.svelte'
@@ -10,14 +11,28 @@
 	export let visible: boolean = true
 	export let headerLight: boolean = false
 	export let borderless: boolean = false
-	export let subtitle:string=''
+	export let subtitle: string = ''
+	export let toHref: string = ''
+
+	let divCard: HTMLDivElement
+
+	onMount(async () => {
+		if (toHref) {
+			let aCard = document.createElement('a')
+			aCard.setAttribute('href', toHref)
+			aCard.setAttribute('class', `${classes} card-link`)
+			aCard.innerHTML = divCard.innerHTML
+			divCard.replaceWith(aCard)
+		}
+	})
+
 	$: classes = clsx('card', {
 		'card-borderless': borderless,
 	})
 </script>
 
 {#if visible}
-	<div class={classes}>
+	<div class={classes} bind:this={divCard}>
 		<slot name="header">
 			{#if title || $$slots['header:actions']}
 				<CardHeader {title} {headerLight} {subtitle}>
