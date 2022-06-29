@@ -8,6 +8,7 @@
 	let headerLight = true
 	let borderless = true
 	let subtitle = 'Subtitle'
+	let toHref = '#'
 </script>
 
 <Row>
@@ -31,6 +32,13 @@
 	<Col col="3">
 		<Card {title} {subtitle}>
 			<CardBody>Card with title and subtitle</CardBody>
+		</Card>
+	</Col>
+</Row>
+<Row>
+	<Col col="3">
+		<Card {toHref}>
+			<CardBody>Default hover effect</CardBody>
 		</Card>
 	</Col>
 </Row>
