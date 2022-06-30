@@ -20,6 +20,7 @@
 	export let cardActive: boolean = false
 	export let cardInactive: boolean = false
 	export let bgStamp: string = ''
+	export let bgCard: string = ''
 
 	let divCard: HTMLDivElement
 
@@ -41,6 +42,7 @@
 		'card-rotate-left': rotateLeft,
 		'card-active': cardActive,
 		'card-inactive': cardInactive,
+		['bg-' + bgCard]: bgCard,
 	})
 </script>
 
