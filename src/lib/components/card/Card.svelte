@@ -26,6 +26,7 @@
 	export let sideStatus: string = ''
 	export let sideRibbon: string = ''
 	export let bgRibbon: string = ''
+	export let progressbar: number | undefined = undefined
 
 	let divCard: HTMLDivElement
 
@@ -96,5 +97,20 @@
 				</CardFooter>
 			{/if}
 		</slot>
+
+		{#if progressbar}
+			<div class="progress progress-sm card-progress">
+				<div
+					class="progress-bar"
+					style="width: {progressbar}%"
+					role="progressbar"
+					aria-valuenow={progressbar}
+					aria-valuemin="0"
+					aria-valuemax="100"
+					aria-label="{progressbar}% Complete">
+					<span class="visually-hidden">{progressbar}% Complete</span>
+				</div>
+			</div>
+		{/if}
 	</div>
 {/if}
