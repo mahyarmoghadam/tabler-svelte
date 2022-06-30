@@ -27,6 +27,7 @@
 	export let sideRibbon: string = ''
 	export let bgRibbon: string = ''
 	export let progressbar: number | undefined = undefined
+	export let stacked: boolean = false
 
 	let divCard: HTMLDivElement
 
@@ -49,6 +50,7 @@
 		'card-active': cardActive,
 		'card-inactive': cardInactive,
 		['bg-' + bgCard]: bgCard,
+		'card-stacked': stacked,
 	})
 </script>
 
