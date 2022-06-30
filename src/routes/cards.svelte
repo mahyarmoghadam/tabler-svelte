@@ -20,7 +20,7 @@
 	let bgCard = 'primary-lt'
 	let txtStamp = 'primary'
 	let sideStatus = 'top'
-	let bgStatus = 'red'
+	let bgStatus = 'danger'
 </script>
 
 <Row>
@@ -64,6 +64,7 @@
 		</Card>
 	</Col>
 </Row>
+
 <Row>
 	<Col col="3">
 		<Card {rotateRight}>
@@ -151,6 +152,25 @@
 	<Col col="3">
 		<Card {sideStatus} {bgStatus}>
 			<CardBody title={'Card with top status'} {textMuted}>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
+				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
+			</CardBody>
+		</Card>
+	</Col>
+</Row>
+
+<Row>
+	<Col col="3">
+		<Card sideStatus={'bottom'} bgStatus={'success'}>
+			<CardBody title={'Card with bottom status'} {textMuted}>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
+				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
+			</CardBody>
+		</Card>
+	</Col>
+	<Col col="3">
+		<Card sideStatus={'start'} bgStatus={'primary'}>
+			<CardBody title={'Card with bottom status'} {textMuted}>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
 				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
 			</CardBody>
