@@ -21,6 +21,7 @@
 	export let cardInactive: boolean = false
 	export let bgStamp: string = ''
 	export let bgCard: string = ''
+	export let txtStamp: string = ''
 
 	let divCard: HTMLDivElement
 
@@ -50,8 +51,8 @@
 	<div class={classes} bind:this={divCard}>
 		{#if $$slots['stamp']}
 			<div class="card-stamp">
-				<div class="card-stamp-icon bg-{bgStamp}">
-					<!-- Download SVG icon from http://tabler-icons.io/i/bell -->
+				<div class="card-stamp-icon {bgStamp && `bg-${bgStamp}`} {txtStamp && `text-${txtStamp}`}">
+					<!-- Download SVG icon from http://tabler-icons.io -->
 					<slot name="stamp" />
 				</div>
 			</div>
