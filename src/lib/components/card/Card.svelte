@@ -22,6 +22,8 @@
 	export let bgStamp: string = ''
 	export let bgCard: string = ''
 	export let txtStamp: string = ''
+	export let bgStatus: string = ''
+	export let sideStatus: string = ''
 
 	let divCard: HTMLDivElement
 
@@ -49,6 +51,10 @@
 
 {#if visible}
 	<div class={classes} bind:this={divCard}>
+		{#if sideStatus && bgStatus}
+			<div class="card-status-{sideStatus} bg-{bgStatus}" />
+		{/if}
+
 		{#if $$slots['stamp']}
 			<div class="card-stamp">
 				<div class="card-stamp-icon {bgStamp && `bg-${bgStamp}`} {txtStamp && `text-${txtStamp}`}">
