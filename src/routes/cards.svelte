@@ -24,6 +24,7 @@
 	let sideRibbon = 'top'
 	let bgRibbon = 'yellow'
 	let progressbar = 38
+	let stacked = true
 </script>
 
 <Row>
@@ -234,6 +235,15 @@
 	<Col col="3">
 		<Card {progressbar}>
 			<CardBody title={'Card with progress bar'} {textMuted}>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
+				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
+			</CardBody>
+		</Card>
+	</Col>
+
+	<Col col="3">
+		<Card {stacked}>
+			<CardBody title={'Stacked card'} {textMuted}>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
 				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
 			</CardBody>
