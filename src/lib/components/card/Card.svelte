@@ -19,6 +19,7 @@
 	export let rotateLeft: boolean = false
 	export let cardActive: boolean = false
 	export let cardInactive: boolean = false
+	export let bgStamp: string = ''
 
 	let divCard: HTMLDivElement
 
@@ -45,6 +46,15 @@
 
 {#if visible}
 	<div class={classes} bind:this={divCard}>
+		{#if $$slots['stamp']}
+			<div class="card-stamp">
+				<div class="card-stamp-icon bg-{bgStamp}">
+					<!-- Download SVG icon from http://tabler-icons.io/i/bell -->
+					<slot name="stamp" />
+				</div>
+			</div>
+		{/if}
+
 		<slot name="header">
 			{#if title || $$slots['header:actions']}
 				<CardHeader {title} {headerLight} {subtitle}>
