@@ -23,6 +23,7 @@
 	let bgStatus = 'danger'
 	let sideRibbon = 'top'
 	let bgRibbon = 'yellow'
+	let progressbar = 38
 </script>
 
 <Row>
@@ -224,6 +225,17 @@
 			<CardBody title={'Card with text ribbon'} {textMuted}>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at consectetur culpa
 				ducimus eum fuga fugiat, ipsa iusto, modi nostrum recusandae reiciendis saepe.
+			</CardBody>
+		</Card>
+	</Col>
+</Row>
+
+<Row>
+	<Col col="3">
+		<Card {progressbar}>
+			<CardBody title={'Card with progress bar'} {textMuted}>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
+				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
 			</CardBody>
 		</Card>
 	</Col>
