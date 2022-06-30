@@ -19,6 +19,8 @@
 	let textMuted = true
 	let bgCard = 'primary-lt'
 	let txtStamp = 'primary'
+	let sideStatus = 'top'
+	let bgStatus = 'red'
 </script>
 
 <Row>
@@ -143,6 +145,14 @@
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at consectetur culpa
 					ducimus eum fuga fugiat, ipsa iusto, modi nostrum recusandae reiciendis saepe.
 				</p>
+			</CardBody>
+		</Card>
+	</Col>
+	<Col col="3">
+		<Card {sideStatus} {bgStatus}>
+			<CardBody title={'Card with top status'} {textMuted}>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
+				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
 			</CardBody>
 		</Card>
 	</Col>
