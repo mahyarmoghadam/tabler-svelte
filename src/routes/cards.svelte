@@ -217,4 +217,14 @@
 			</CardBody>
 		</Card>
 	</Col>
+
+	<Col col="3">
+		<Card bgRibbon={'red'}>
+			<span slot="ribbon">NEW</span>
+			<CardBody title={'Card with text ribbon'} {textMuted}>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at consectetur culpa
+				ducimus eum fuga fugiat, ipsa iusto, modi nostrum recusandae reiciendis saepe.
+			</CardBody>
+		</Card>
+	</Col>
 </Row>
