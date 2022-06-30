@@ -24,6 +24,8 @@
 	export let txtStamp: string = ''
 	export let bgStatus: string = ''
 	export let sideStatus: string = ''
+	export let sideRibbon: string = ''
+	export let bgRibbon: string = ''
 
 	let divCard: HTMLDivElement
 
@@ -61,6 +63,13 @@
 					<!-- Download SVG icon from http://tabler-icons.io -->
 					<slot name="stamp" />
 				</div>
+			</div>
+		{/if}
+
+		{#if $$slots['ribbon']}
+			<div class="ribbon {sideRibbon && `ribbon-${sideRibbon}`} {bgRibbon && `bg-${bgRibbon}`}">
+				<!-- Download SVG icon from http://tabler-icons.io -->
+				<slot name="ribbon" />
 			</div>
 		{/if}
 
