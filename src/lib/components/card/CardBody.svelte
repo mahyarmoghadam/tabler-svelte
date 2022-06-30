@@ -1,6 +1,7 @@
 <script lang="ts">
 	import CardTitle from './CardTitle.svelte'
 	export let title: string = ''
+	export let textMuted: boolean = false
 </script>
 
 <div class="card-body">
@@ -11,5 +12,12 @@
 			</slot>
 		</CardTitle>
 	{/if}
-	<slot />
+
+	{#if textMuted}
+		<p class="text-muted">
+			<slot />
+		</p>
+	{:else}
+		<slot />
+	{/if}
 </div>
