@@ -29,6 +29,7 @@
 	export let progressbar: number | undefined = undefined
 	export let stacked: boolean = false
 	export let colImage: number = 3
+	export let orderImage: string = ''
 
 	let divCard: HTMLDivElement
 
@@ -89,7 +90,7 @@
 
 		{#if $$slots['side-image']}
 			<div class="row row-0">
-				<div class="col-{colImage} ">
+				<div class="col-{colImage} {orderImage && `order-${orderImage}`}">
 					<slot name="side-image" />
 				</div>
 				<div class="col">
