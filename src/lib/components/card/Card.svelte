@@ -30,6 +30,7 @@
 	export let stacked: boolean = false
 	export let colImage: number = 3
 	export let orderImage: string = ''
+	export let transparentFooter: boolean = false
 
 	let divCard: HTMLDivElement
 
@@ -107,7 +108,7 @@
 
 		<slot name="footer">
 			{#if footer || $$slots['footer:actions']}
-				<CardFooter {footer}>
+				<CardFooter {footer} {transparentFooter}>
 					<slot name="footer:actions" />
 				</CardFooter>
 			{/if}
