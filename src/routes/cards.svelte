@@ -29,6 +29,7 @@
 	let colImage = 3
 	let orderImage = 'md-last'
 	let footer = 'This is standard card footer'
+	let transparentFooter = true
 </script>
 
 <Row>
@@ -313,6 +314,15 @@
 	<Col col="3">
 		<Card {footer}>
 			<CardBody title={'Card with footer'} {textMuted}>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
+				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
+			</CardBody>
+		</Card>
+	</Col>
+
+	<Col col="3">
+		<Card footer={'This is transparent card footer'} {transparentFooter}>
+			<CardBody title={'Card with transparent footer'} {textMuted}>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
 				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
 			</CardBody>
