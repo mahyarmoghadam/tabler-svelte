@@ -25,6 +25,7 @@
 	let bgRibbon = 'yellow'
 	let progressbar = 38
 	let stacked = true
+	let colImage = 3
 </script>
 
 <Row>
@@ -244,6 +245,20 @@
 	<Col col="3">
 		<Card {stacked}>
 			<CardBody title={'Stacked card'} {textMuted}>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
+				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
+			</CardBody>
+		</Card>
+	</Col>
+
+	<Col col="6">
+		<Card {colImage}>
+			<img
+				slot="side-image"
+				src="https://preview.tabler.io/static/photos/2854fd67ddbd6217.jpg"
+				class="w-100 h-100 object-cover"
+				alt="Card side" />
+			<CardBody slot="side-body" title={'Card with left side image'} {textMuted}>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
 				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
 			</CardBody>
