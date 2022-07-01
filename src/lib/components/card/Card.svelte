@@ -28,6 +28,7 @@
 	export let bgRibbon: string = ''
 	export let progressbar: number | undefined = undefined
 	export let stacked: boolean = false
+	export let colImage: number = 3
 
 	let divCard: HTMLDivElement
 
@@ -85,6 +86,17 @@
 		</slot>
 
 		<slot />
+
+		{#if $$slots['side-image']}
+			<div class="row row-0">
+				<div class="col-{colImage} ">
+					<slot name="side-image" />
+				</div>
+				<div class="col">
+					<slot name="side-body" />
+				</div>
+			</div>
+		{/if}
 
 		{#if $$slots['body']}
 			<CardBody>
