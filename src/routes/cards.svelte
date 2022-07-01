@@ -275,10 +275,34 @@
 				src="https://preview.tabler.io/static/photos/de6d0fd1feebb6a2.jpg"
 				class="w-100 h-100 object-cover"
 				alt="Card side" />
-			<CardBody slot="side-body" title={'Card with left side image'} {textMuted}>
+			<CardBody slot="side-body" title={'Card with right side image'} {textMuted}>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
 				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
 			</CardBody>
+		</Card>
+	</Col>
+
+	<Col col="3">
+		<Card>
+			<div
+				class="card-img-top img-responsive img-responsive-21x9"
+				style="background-image: url(https://preview.tabler.io/static/photos/9f36332564ca271d.jpg)" />
+			<CardBody title={'Card with top image'} {textMuted}>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
+				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
+			</CardBody>
+		</Card>
+	</Col>
+
+	<Col col="3">
+		<Card>
+			<CardBody title={'Card with bottom image'} {textMuted}>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
+				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
+			</CardBody>
+			<div
+				class="card-img-bottom img-responsive img-responsive-21x9"
+				style="background-image: url(https://preview.tabler.io/static/photos/56614e12b2a7bd68.jpg)" />
 		</Card>
 	</Col>
 </Row>
