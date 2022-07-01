@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Card from '$lib/components/card/Card.svelte'
 	import CardBody from '$lib/components/card/CardBody.svelte'
+	import CardFooter from '$lib/components/card/CardFooter.svelte'
 	import Col from '$lib/components/grid/Col.svelte'
 	import Row from '$lib/components/grid/Row.svelte'
 
@@ -27,6 +28,7 @@
 	let stacked = true
 	let colImage = 3
 	let orderImage = 'md-last'
+	let footer = 'This is standard card footer'
 </script>
 
 <Row>
@@ -303,6 +305,17 @@
 			<div
 				class="card-img-bottom img-responsive img-responsive-21x9"
 				style="background-image: url(https://preview.tabler.io/static/photos/56614e12b2a7bd68.jpg)" />
+		</Card>
+	</Col>
+</Row>
+
+<Row>
+	<Col col="3">
+		<Card {footer}>
+			<CardBody title={'Card with footer'} {textMuted}>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
+				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
+			</CardBody>
 		</Card>
 	</Col>
 </Row>
