@@ -4,6 +4,7 @@
 	import CardFooter from '$lib/components/card/CardFooter.svelte'
 	import Col from '$lib/components/grid/Col.svelte'
 	import Row from '$lib/components/grid/Row.svelte'
+	import Button from '$lib/components/button/button.svelte'
 
 	let title = 'Card Title'
 	let headerLight = true
@@ -326,6 +327,18 @@
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
 				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
 			</CardBody>
+		</Card>
+	</Col>
+
+	<Col col="3">
+		<Card>
+			<CardBody title={'Card with footer button'} {textMuted}>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
+				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
+			</CardBody>
+			<CardFooter>
+				<Button to={'#'}>Go somewhere</Button>
+			</CardFooter>
 		</Card>
 	</Col>
 </Row>
