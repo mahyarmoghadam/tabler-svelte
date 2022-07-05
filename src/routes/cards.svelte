@@ -341,4 +341,19 @@
 			</CardFooter>
 		</Card>
 	</Col>
+
+	<Col col="3">
+		<Card>
+			<CardBody title={'Card with footer buttons'} {textMuted}>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
+				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
+			</CardBody>
+			<CardFooter>
+				<div class="d-flex">
+					<Button to={'#'} link={true}>Cancel</Button>
+					<Button to={'#'} className={"ms-auto"}>Go somewhere</Button>
+				</div>
+			</CardFooter>
+		</Card>
+	</Col>
 </Row>
