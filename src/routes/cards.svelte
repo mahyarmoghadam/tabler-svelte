@@ -375,4 +375,35 @@
 			</CardFooter>
 		</Card>
 	</Col>
+
+	<Col col="3">
+		<Card>
+			<CardBody {textMuted}>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
+				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
+			</CardBody>
+			<CardFooter>
+				<Row alignItems={'center'}>
+					<Col col={'auto'} className={'ms-auto'}>
+						<div class="avatar-list avatar-list-stacked">
+							<span
+								class="avatar avatar-sm avatar-rounded"
+								style="background-image: url(https://preview.tabler.io/static/avatars/000m.jpg)" />
+							<span class="avatar avatar-sm avatar-rounded">JL</span>
+							<span
+								class="avatar avatar-sm avatar-rounded"
+								style="background-image: url(https://preview.tabler.io/static/avatars/002m.jpg)" />
+							<span
+								class="avatar avatar-sm avatar-rounded"
+								style="background-image: url(https://preview.tabler.io/static/avatars/003m.jpg)" />
+							<span
+								class="avatar avatar-sm avatar-rounded"
+								style="background-image: url(https://preview.tabler.io/static/avatars/000f.jpg)" />
+							<span class="avatar avatar-sm avatar-rounded">+3</span>
+						</div>
+					</Col>
+				</Row>
+			</CardFooter>
+		</Card>
+	</Col>
 </Row>
