@@ -12,12 +12,19 @@
 </script>
 
 <div class={classes}>
-	<CardTitle {subtitle}>
-		<slot name="title">
-			{title}
-		</slot>
-	</CardTitle>
-	<CardActions>
-		<slot name="actions" />
-	</CardActions>
+	{#if title}
+		<CardTitle {subtitle}>
+			<slot name="title">
+				{title}
+			</slot>
+		</CardTitle>
+	{/if}
+
+	{#if $$slots['actions']}
+		<CardActions>
+			<slot name="actions" />
+		</CardActions>
+	{/if}
+
+	<slot />
 </div>
