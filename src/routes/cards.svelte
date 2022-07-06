@@ -351,8 +351,27 @@
 			<CardFooter>
 				<div class="d-flex">
 					<Button to={'#'} link={true}>Cancel</Button>
-					<Button to={'#'} className={"ms-auto"}>Go somewhere</Button>
+					<Button to={'#'} className={'ms-auto'}>Go somewhere</Button>
 				</div>
+			</CardFooter>
+		</Card>
+	</Col>
+</Row>
+
+<Row>
+	<Col col="3">
+		<Card>
+			<CardBody {textMuted}>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt,
+				iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem.
+			</CardBody>
+			<CardFooter>
+				<Row alignItems={'center'}>
+					<Col col={'auto'}>
+						<Button to={'#'} link={true}>More information</Button>
+					</Col>
+					<Col col={'auto'} className={'ms-auto'}>Radio</Col>
+				</Row>
 			</CardFooter>
 		</Card>
 	</Col>
