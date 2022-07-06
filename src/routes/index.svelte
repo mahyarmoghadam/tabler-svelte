@@ -3,6 +3,22 @@
 
 <script lang="ts">
 	import { Button, Row, Card, Col } from '$lib/components'
+	import {
+BrandBitbucket,
+		BrandDribbble,
+		BrandFacebook,
+		BrandFlickr,
+		BrandGithub,
+		BrandGoogle,
+		BrandInstagram,
+		BrandPinterest,
+		BrandTabler,
+		BrandTwitter,
+		BrandVimeo,
+		BrandVk,
+		BrandYoutube,
+		Rss,
+	} from 'tabler-icons-svelte'
 </script>
 
 <svelte:head>
@@ -322,40 +338,212 @@
 				<div slot="body">
 					<Row alignItems="center" g="2">
 						<Col col="6" sm="4" md="2" py="3" xl="auto">
-							<Button color="blue">Blue</Button>
+							<Button block color="blue">Blue</Button>
 						</Col>
 						<Col col="6" sm="4" md="2" py="3" xl="auto">
-							<Button color="azure">Azure</Button>
+							<Button block color="azure">Azure</Button>
 						</Col>
 						<Col col="6" sm="4" md="2" py="3" xl="auto">
-							<Button color="indigo">Indigo</Button>
+							<Button block color="indigo">Indigo</Button>
 						</Col>
 						<Col col="6" sm="4" md="2" py="3" xl="auto">
-							<Button color="purple">Purple</Button>
+							<Button block color="purple">Purple</Button>
 						</Col>
 						<Col col="6" sm="4" md="2" py="3" xl="auto">
-							<Button color="pink">Pink</Button>
+							<Button block color="pink">Pink</Button>
 						</Col>
 						<Col col="6" sm="4" md="2" py="3" xl="auto">
-							<Button color="red">Red</Button>
+							<Button block color="red">Red</Button>
 						</Col>
 						<Col col="6" sm="4" md="2" py="3" xl="auto">
-							<Button color="orange">Orange</Button>
+							<Button block color="orange">Orange</Button>
 						</Col>
 						<Col col="6" sm="4" md="2" py="3" xl="auto">
-							<Button color="yellow">Yellow</Button>
+							<Button block color="yellow">Yellow</Button>
 						</Col>
 						<Col col="6" sm="4" md="2" py="3" xl="auto">
-							<Button color="lime">Lime</Button>
+							<Button block color="lime">Lime</Button>
 						</Col>
 						<Col col="6" sm="4" md="2" py="3" xl="auto">
-							<Button color="green">Green</Button>
+							<Button block color="green">Green</Button>
 						</Col>
 						<Col col="6" sm="4" md="2" py="3" xl="auto">
-							<Button color="teal">Teal</Button>
+							<Button block color="teal">Teal</Button>
 						</Col>
 						<Col col="6" sm="4" md="2" py="3" xl="auto">
-							<Button color="cyan">Cyan</Button>
+							<Button block color="cyan">Cyan</Button>
+						</Col>
+					</Row>
+				</div>
+			</Card>
+		</Col>
+
+		<Col col="12">
+			<Card title="Icon buttons">
+				<div slot="body">
+					<Row alignItems="center" g="2">
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button iconButton icon="facebook" block>
+								<BrandFacebook size="48" strokeWidth="1" />
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button iconButton icon="twitter" block>
+								<BrandTwitter size="48" strokeWidth="1" />
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button iconButton icon="google" block>
+								<BrandGoogle size="48" strokeWidth="1" />
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button iconButton icon="youtube" block>
+								<BrandYoutube size="48" strokeWidth="1" />
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button iconButton icon="vimeo" block>
+								<BrandVimeo size="48" strokeWidth="1" />
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button iconButton icon="dribbble" block>
+								<BrandDribbble size="48" strokeWidth="1" />
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button iconButton icon="github" block>
+								<BrandGithub size="48" strokeWidth="1" />
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button iconButton icon="instagram" block>
+								<BrandInstagram size="48" strokeWidth="1" />
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button iconButton icon="pinterest" block>
+								<BrandPinterest size="48" strokeWidth="1" />
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button iconButton icon="vk" block>
+								<BrandVk size="48" strokeWidth="1" />
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button iconButton icon="rss" block>
+								<Rss size="48" strokeWidth="1" />
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button iconButton icon="flickr" block>
+								<BrandFlickr size="48" strokeWidth="1" />
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button iconButton icon="bitbucket" block>
+								<BrandBitbucket size="48" strokeWidth="1" />
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button iconButton icon="tabler" block>
+								<BrandTabler size="48" strokeWidth="1" />
+							</Button>
+						</Col>
+					</Row>
+				</div>
+			</Card>
+		</Col>
+
+		<Col col="12">
+			<Card title="Social colors">
+				<div slot="body">
+					<Row alignItems="center" g="2">
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button icon="facebook" block>
+								<BrandFacebook size="48" strokeWidth="1" />
+								Facebook
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button icon="twitter" block>
+								<BrandTwitter size="48" strokeWidth="1" />
+								Twitter
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button icon="google" block>
+								<BrandGoogle size="48" strokeWidth="1" />
+								Google
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button icon="youtube" block>
+								<BrandYoutube size="48" strokeWidth="1" />
+								Youtube
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button icon="vimeo" block>
+								<BrandVimeo size="48" strokeWidth="1" />
+								Vimeo
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button icon="dribbble" block>
+								<BrandDribbble size="48" strokeWidth="1" />
+								Dribbble
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button icon="github" block>
+								<BrandGithub size="48" strokeWidth="1" />
+								Github
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button icon="instagram" block>
+								<BrandInstagram size="48" strokeWidth="1" />
+								Instagram
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button icon="pinterest" block>
+								<BrandPinterest size="48" strokeWidth="1" />
+								Pinterest
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button icon="vk" block>
+								<BrandVk size="48" strokeWidth="1" />
+								Vk
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button icon="rss" block>
+								<Rss size="48" strokeWidth="1" />
+								Rss
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button icon="flickr" block>
+								<BrandFlickr size="48" strokeWidth="1" />
+								Flickr
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button icon="bitbucket" block>
+								<BrandBitbucket size="48" strokeWidth="1" />
+								Bitbucket
+							</Button>
+						</Col>
+						<Col col="6" sm="4" md="2" py="3" xl="auto">
+							<Button icon="tabler" block>
+								<BrandTabler size="48" strokeWidth="1" />
+								Tabler
+							</Button>
 						</Col>
 					</Row>
 				</div>
