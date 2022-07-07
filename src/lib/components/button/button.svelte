@@ -2,6 +2,9 @@
 	import type { Colors } from '$lib/types/colors'
 	import type { Icons } from '$lib/types/icons'
 	import clsx from 'clsx'
+	let className = ''
+	export { className as class }
+
 	export let block: boolean = false
 	export let color: Colors | undefined = undefined
 	export let icon: Icons | undefined = undefined
@@ -16,8 +19,7 @@
 	export let iconButton: boolean = false
 	export let size: 'sm' | 'md' | 'lg' | undefined = undefined
 	export let visible: boolean = true
-	export let to: string = ''
-	export let className: string = ''
+	export let href: string = ''
 
 	$: classes = clsx({
 		'btn': true,
@@ -39,12 +41,12 @@
 </script>
 
 {#if visible}
-	{#if to}
-		<a class={classes} {disabled} role="button" href={to} type="button" on:click {...$$restProps}>
+	{#if href}
+		<a class={classes} {disabled} role="button" {href} on:click {...$$restProps}>
 			<slot />
 		</a>
 	{:else}
-		<button class={classes} {disabled} on:click {...$$restProps}>
+		<button type="button" class={classes} {disabled} on:click {...$$restProps}>
 			<slot />
 		</button>
 	{/if}
