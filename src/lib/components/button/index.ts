@@ -1,2 +1,3 @@
-export { default as Button } from './button.svelte'
-export { default as Buttons } from './buttons.svelte'
+export { default as Button } from './Button.svelte'
+export { default as ButtonGroup } from './ButtonGroup.svelte'
+export { default as ButtonToolbar } from './ButtonToolbar.svelte'
