@@ -25,7 +25,6 @@
 			<div class="nav-item d-none d-md-flex me-3">
 				<div class="btn-list">
 					<a href="https://github.com/tabler/tabler" class="btn" target="_blank" rel="noreferrer">
-						<!-- Download SVG icon from http://tabler-icons.io/i/brand-github -->
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							class="icon"
