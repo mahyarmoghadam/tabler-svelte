@@ -8,9 +8,9 @@
 <Navbar />
 <main>
 	<div class="page-wrapper">
-		<div class="container-xl">
+		<!-- <div class="container-xl"> -->
 			<slot />
-		</div>
+		<!-- </div> -->
 	</div>
 </main>
 

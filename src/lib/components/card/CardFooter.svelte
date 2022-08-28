@@ -1,17 +1,18 @@
 <script lang="ts">
+	import clsx from 'clsx'
+
 	export let footer: string = ''
+	export let transparentFooter: boolean = false
+
+	$: classes = clsx('card-footer', {
+		'card-footer-transparent': transparentFooter,
+	})
 </script>
 
-<div class="card-footer">
-	<!-- TODO: not standard -->
-	<div class="row d-flex align-items-center">
-		{#if footer}
-			<div class="col-auto">
-				{footer}
-			</div>
-		{/if}
-		<div class="col-auto ms-auto">
-			<slot />
-		</div>
-	</div>
+<div class={classes}>
+	{#if footer}
+		{footer}
+	{/if}
+
+	<slot />
 </div>

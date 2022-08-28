@@ -27,6 +27,7 @@ BrandBitbucket,
 </svelte:head>
 
 <section>
+	<a href="cards">Cards page</a>
 	<h1>
 		<span class="welcome" />
 	</h1>

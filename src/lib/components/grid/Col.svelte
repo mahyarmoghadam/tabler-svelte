@@ -25,6 +25,7 @@
 	export let py: colSize = undefined
 	export let color: Colors | undefined = undefined
 	export let samiBold: boolean = false
+	export let className: string = ''
 
 	$: classes = clsx(col ? `col-${col}` : 'col', {
 		[`col-xl-${xl}`]: !!xl && typeof xl == 'string',
@@ -39,6 +40,7 @@
 		[`py-${py}`]: !!py,
 
 		'font-weight-semibold': samiBold,
+		[className]: className,
 	})
 </script>
 
